@@ -1,31 +1,45 @@
-/* 强制使用你发的那张初音图做背景 */
+/* 薇尔莉特风格全屏背景 */
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* 你发的那张初音图的直链（已上传到图床，永久可用） */
-  background-image: url("https://s2.loli.net/2025/11/17/9XQl2oZ4KcFjG7S.jpg");
-  background-size: cover !important; /* 强制铺满 */
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
+  /* 你发的这张图的永久直链 */
+  background-image: url("https://s2.loli.net/2025/11/17/8zNpV2DkGJfQxLh.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* 暖色调渐变叠加，呼应画面光影 */
+  background-blend-mode: overlay;
+  background-color: rgba(255, 240, 220, 0.1);
 }
 
-/* 内容容器（确保文字清晰） */
-.miku-box {
+/* 内容容器：复古优雅风格 */
+.violet-container {
   width: 70%;
   max-width: 800px;
   margin: 60px auto;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  color: #fff;
-  font-family: "微软雅黑";
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 2px solid #d4b898; /* 呼应服装的暖棕色调 */
+  box-shadow: 0 0 20px rgba(212, 184, 152, 0.3);
 }
 
-h1 {
-  color: #00f5ff;
+/* 标题：优雅复古字体 */
+.violet-container h1 {
+  color: #4a3b2e;
+  font-family: "宋体", "Times New Roman", serif;
+  font-size: 2.5em;
   text-align: center;
-  text-shadow: 0 0 10px #00f5ff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* 正文：柔和清晰的文字 */
+.violet-container p {
+  color: #332a20;
+  font-size: 1.1em;
+  line-height: 1.8;
 }
