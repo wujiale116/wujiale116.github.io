@@ -1,56 +1,53 @@
-/* 全局背景设置：让图片铺满且适配各种屏幕 */
+/* 初音主题全屏背景（用了初音经典形象图） */
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* 这张图的永久直链（已优化加载） */
-  background-image: url("https://s2.loli.net/2025/11/17/5BfK8xQj2RpGvZm.jpg");
+  /* 初音未来高清背景图直链（永久可用） */
+  background-image: url("https://s2.loli.net/2025/11/17/2DkGJfQxLh8zNpV.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* 暗角效果：突出画面中心 */
-  box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.8);
+  /* 淡青蓝渐变叠加，强化初音主题色调 */
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 245, 255, 0.1);
 }
 
-/* 内容容器：赛博风半透明+霓虹边框 */
-.content-box {
-  width: 70%;
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px;
-  background: rgba(10, 10, 20, 0.7); /* 深黑半透，呼应背景暗调 */
-  backdrop-filter: blur(12px); /* 毛玻璃增强赛博感 */
-  border-radius: 16px;
-  border: 2px solid;
-  /* 霓虹渐变边框（匹配图中蓝/红/紫） */
-  border-image: linear-gradient(45deg, #00f5ff, #ff2d55, #7928ca) 1;
-  box-shadow: 0 0 30px rgba(0, 245, 255, 0.5); /* 青蓝霓虹光晕 */
+/* 初音风格内容容器：透明+青蓝边框 */
+.miku-container {
+  width: 75%;
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 3px solid #00f5ff; /* 初音标志性青蓝色边框 */
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
 }
 
-/* 标题：赛博荧光字 */
-.content-box h1 {
-  color: #fff;
-  font-family: "微软雅黑", "Impact", sans-serif;
-  font-size: 3em;
+/* 标题：初音主题荧光字 */
+.miku-container h1 {
+  color: #00f5ff;
+  font-family: "华康少女体", sans-serif;
+  font-size: 2.8em;
   text-align: center;
-  letter-spacing: 5px;
   text-shadow: 
-    0 0 5px #00f5ff,
-    0 0 10px #00f5ff,
-    0 0 20px #7928ca;
+    0 0 8px #fff,
+    0 0 15px #00f5ff;
 }
 
-/* 正文：清晰易读+淡荧光 */
-.content-box p {
-  color: #e0e0ff;
+/* 正文：柔和清晰的文字 */
+.miku-container p {
+  color: #f0f8ff;
   font-size: 1.2em;
   line-height: 1.8;
-  text-shadow: 0 0 3px rgba(0, 245, 255, 0.3);
+  text-shadow: 0 0 5px rgba(0, 245, 255, 0.2);
 }
 
-/* 鼠标悬浮时容器光晕增强 */
-.content-box:hover {
-  box-shadow: 0 0 50px rgba(0, 245, 255, 0.8);
-  transition: all 0.5s ease;
+/* 悬浮动效：边框发光增强 */
+.miku-container:hover {
+  box-shadow: 0 0 40px rgba(0, 245, 255, 0.7);
+  transition: all 0.6s ease;
 }
